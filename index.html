@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merger</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-950 text-white">
+  <div class="heading text-center text-4xl text-cyan-700 font-semibold">Merge Multiple Files</div>
+  
+  <div class="makeCenter border border-gray-500 shadow-inner shadow-gray-400 w-96 py-3 mx-auto mt-6 pl-8 rounded-xl">
+    <div class="text-lg mt-3">CSV Full Data</div>
+    <input class="my-2 text-lg" type="file" name="csvFile" id="csvFile" onchange="handleCsvFiles(event)" multiple><br>
+
+    <div class="text-center mt-7 mb-3"><button
+        class="bg-blue-700 hover:bg-blue-800 active:bg-blue-700 px-6 py-1 rounded-md text-xl"
+        onclick="downloadCsvFullData(event)">Download CSV Data</button>
+    </div>
+  
+    <div class="text-lg mt-3">XLSX Full Data</div>
+    <input class="my-2 text-lg" type="file" name="excelFile" id="excelFile" onchange="handleExcelFiles(event)" multiple><br>
+
+    <div class="text-center mt-7 mb-3"><button
+        class="bg-blue-700 hover:bg-blue-800 active:bg-blue-700 px-6 py-1 rounded-md text-xl"
+        onclick="downloadExcelFullData(event)">Download XLSX Data</button>
+    </div>
+  
+    <div class="text-lg mt-3">Text Full Data</div>
+    <input class="my-2 text-lg" type="file" name="textFile" id="textFile" onchange="getTextFiles(event)" multiple><br>
+  
+    <div class="text-center mt-7 mb-3"><button
+        class="bg-blue-700 hover:bg-blue-800 active:bg-blue-700 px-6 py-1 rounded-md text-xl"
+        onclick="downloadTextFullData(event)">Download Text Data</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
