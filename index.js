@@ -32,7 +32,7 @@ function handleCsvFiles(event) {
         csvFullData.push(obj);
       });
     };
-    // console.log(csvFullData);
+    console.log(csvFullData);
 
     reader.onerror = function (event) {
       console.error("Error reading the file:", event.target.error);
@@ -75,7 +75,7 @@ function getTextFiles(event) {
       }
     }
 
-    // console.log("Merged Text Data:", textFullData);
+    console.log("Merged Text Data:", textFullData);
   };
 
   processFiles();
@@ -120,7 +120,7 @@ function handleExcelFiles(event) {
       }
     }
 
-    // console.log("Merged Data:", excelFullData);
+    console.log("Merged Data:", excelFullData);
   };
 
   processFiles();
