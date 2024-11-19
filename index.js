@@ -74,7 +74,6 @@ function getTextFiles(event) {
         console.error(`Error reading file ${file.name}:`, err);
       }
     }
-
     console.log("Merged Text Data:", textFullData);
   };
 
@@ -119,7 +118,6 @@ function handleExcelFiles(event) {
         console.error(`Error processing file ${file.name}:`, err);
       }
     }
-
     console.log("Merged Data:", excelFullData);
   };
 
